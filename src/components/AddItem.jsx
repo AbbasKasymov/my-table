@@ -43,7 +43,7 @@ const AddItem = () => {
           flexDirection: "column",
         }}
       >
-        <h2 style={{ margin: "40px 0" }} className="text-center">
+        <h2 style={{ margin: "40px 0 20px 0" }} className="text-center">
           Add Item
         </h2>
         <Forms onSubmit={(event) => handleSubmit(event)}>

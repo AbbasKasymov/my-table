@@ -15,10 +15,12 @@ const MainPage = () => {
     <React.Fragment>
       <Container>
         <AddItem />
-        <Search getItem={getItem} products={products} />
+        <Filter>
+          <Search getItem={getItem} products={products} />
+          <Sort getItem={getItem} products={products} />
+        </Filter>
         <Table products={products} />
         <MyPag />
-        <Sort getItem={getItem} products={products} />
       </Container>
     </React.Fragment>
   );
@@ -30,6 +32,13 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
+`;
+const Filter = styled.div`
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 `;
 
 export default MainPage;

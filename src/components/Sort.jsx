@@ -6,7 +6,7 @@ import { adminContext } from "../context/AdminContext";
 const Sort = ({ getItem }) => {
   const data = React.useContext(adminContext);
   const { sortItems } = data;
-  const sortOptions = ["Name", "Quantity", "Distance", "Date"];
+  const sortOptions = ["name", "quantity", "distance", "date"];
   const [sortValue, setSortValue] = useState();
   const handleSort = async (e) => {
     let value = e.target.value;
@@ -20,7 +20,6 @@ const Sort = ({ getItem }) => {
   return (
     <MDBRow>
       <MDBCol size="8">
-        <h5>Sort by:</h5>
         <select
           style={{ width: "200%", borderRadius: "4px", height: "35px" }}
           onChange={handleSort}

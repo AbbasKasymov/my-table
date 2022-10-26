@@ -23,7 +23,7 @@ const Search = ({ getItem }) => {
   return (
     <form
       style={{
-        margin: "auto",
+        // margin: "auto",
         padding: "15px",
         maxWidth: "400px",
         alignContent: "center",
